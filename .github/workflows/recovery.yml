@@ -17,7 +17,7 @@ env:
   DEVICE: DPL_sprout
   DT_LINK: https://github.com/YSedd/twrp_device_Nokia_3.2
   DT_PATH: device/hmd/DPL_sprout
-  TARGET: bootimage
+  TARGET: recoveryimage
   TZ: Asia/manila
 
 jobs:
@@ -63,6 +63,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
           tag_name: TWRP_10.0
-          name: TWRP-KD7
+          name: TWRP-DPL_sprout
           files: | 
-            work/out/target/product/KD7/recovery.img
+            work/out/target/product/deadpool/recovery.img
